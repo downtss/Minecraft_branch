@@ -1,0 +1,182 @@
+# ExtraGore Particle Group Configuration
+# ------------------------------------------------------
+# This file enables the creation of custom blood particle properties for various entities.
+# Begin by uniquely naming each property group to effectively manage different settings.
+
+# Particle Behavior Options:
+# - Bounce: The particle will bounce off surfaces like a solid object.
+# - Stick: The particle will stick to walls and other surfaces.
+# - Magic: Some particles will fall to the ground while the majority will fly up to the sky.
+# - None: The particle won't have any special effects.
+
+# Particle Weight Options:
+# - Heavy: The particle will sink to the bottom when it's underwater.
+# - Light: The particle will float up to the top of the water.
+
+# Particle State Options:
+# - Liquid: The particle will get larger during its lifetime.
+# - Solid: The particle will remain the same size all the time.
+
+# Color Settings:
+# Set an RGB color value to visually distinguish particles for various entities.
+
+# How to Use:
+# 1. Define a group with a name, including behavior, weight, state, color and entity values.
+# 2. Example:
+#    ["Color Group Name"]
+#    behavior = Choose from "Stuck", "Bounce" or "None"
+#    weight = Choose from "Heavy" or "Light"
+#    state = Choose from "Liquid" or "Solid"
+#    color = "R,G,B"
+#    entities = ["entityID1", "entityID2"]
+# 3. You can modify or delete any predefined groups, except for the red group. The red group is non editable and serves only to show you unused entities which are compatible with different color groups.
+# 4. Add your custom color groups under an already predefined group, except for the red one.
+# 5. Ensure each color group has a unique name and is properly structured.
+
+# Note: Incorrectly formatted lines or unrecognized entity IDs will be ignored.
+# ------------------------------------------------------
+
+["Violet Group"]
+behavior = "Magic"
+weight = "Light"
+state = "Liquid"
+color = "128,0,128"
+entities = ["minecraft:enderman", "minecraft:endermite", "minecraft:phantom", "minecraft:shulker", "minecraft:silverfish", "minecraft:warden", "minecraft:ender_dragon"]
+
+["White Group"]
+behavior = "Bounce"
+weight = "Heavy"
+state = "Solid"
+color = "255,255,255"
+entities = ["minecraft:skeleton", "minecraft:ghast", "minecraft:iron_golem", "minecraft:skeleton_horse", "minecraft:snow_golem", "minecraft:stray", "minecraft:vex", "minecraft:wither_skeleton", "minecraft:allay", "minecraft:wither"]
+
+["Green Group"]
+behavior = "Stuck"
+weight = "Light"
+state = "Liquid"
+color = "0,255,0"
+entities = ["minecraft:cave_spider", "minecraft:creeper", "minecraft:slime", "minecraft:spider", "minecraft:witch"]
+
+["Yellow Group"]
+behavior = "Bounce"
+weight = "Heavy"
+state = "Solid"
+color = "255,255,0"
+entities = ["minecraft:blaze", "minecraft:magma_cube", "minecraft:strider"]
+
+["Blue Group"]
+behavior = "None"
+weight = "Light"
+state = "Liquid"
+color = "0,0,255"
+entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian", "minecraft:glow_squid"]
+
+# Auto generated red color group - do not edit. Use this as reference for unused entity IDs.
+"255,0,0" = [
+    "zombie_extreme:demolisher",
+    "minecraft:giant",
+    "zombie_island:walker_3",
+    "zombie_extreme:infected",
+    "zombie_island:walker_4",
+    "zombie_island:walker_1",
+    "zombie_island:walker_2",
+    "zombie_island:eat_courier",
+    "minecraft:trader_llama",
+    "minecraft:horse",
+    "zombie_extreme:parasite",
+    "hordes:zombie_player",
+    "zombie_extreme:infected_juggernaut",
+    "zombie_island:firefighter_walker",
+    "minecraft:llama",
+    "minecraft:husk",
+    "zombie_extreme:goon",
+    "minecraft:tadpole",
+    "minecraft:dolphin",
+    "zombie_extreme:devestated",
+    "zombie_extreme:infected_military",
+    "minecraft:donkey",
+    "zombie_island:grenadier_walker",
+    "minecraft:piglin_brute",
+    "zombie_extreme:divided",
+    "minecraft:bee",
+    "minecraft:illusioner",
+    "minecraft:mooshroom",
+    "minecraft:drowned",
+    "minecraft:axolotl",
+    "zombie_extreme:faceless",
+    "zombie_island:shocking_walker",
+    "zombie_extreme:infected_police",
+    "zombie_extreme:revived",
+    "zombie_island:insect_swarm_walker",
+    "minecraft:parrot",
+    "zombie_extreme:inflated",
+    "zombie_extreme:boomer",
+    "jeg:boo",
+    "minecraft:wandering_trader",
+    "zombie_island:incendiary_walker",
+    "minecraft:frog",
+    "zombie_extreme:clicker",
+    "zombie_island:runner_2",
+    "zombie_island:runner_1",
+    "hordes:drowned_player",
+    "zombie_extreme:explosive_infected",
+    "minecraft:mule",
+    "zombie_island:shambler_4",
+    "zombie_island:shambler_3",
+    "minecraft:vindicator",
+    "zombie_island:burning_walker",
+    "zombie_island:runner_4",
+    "zombie_island:runner_3",
+    "minecraft:evoker",
+    "zombie_island:shambler",
+    "zombie_island:shambler_2",
+    "zombie_island:shambler_1",
+    "minecraft:pufferfish",
+    "zombie_extreme:infected_hazmat",
+    "minecraft:fox",
+    "simplyswords:simplybeeentity",
+    "minecraft:chicken",
+    "minecraft:zombie",
+    "zombie_extreme:ram",
+    "zombie_island:hazmat_walker",
+    "minecraft:hoglin",
+    "hordes:husk_player",
+    "minecraft:polar_bear",
+    "minecraft:zombified_piglin",
+    "minecraft:pig",
+    "minecraft:turtle",
+    "minecraft:sheep",
+    "zombie_island:walker",
+    "minecraft:goat",
+    "minecraft:cod",
+    "zombie_extreme:assasin_black_ops",
+    "zombie_extreme:rat_king",
+    "minecraft:ravager",
+    "zombie_extreme:runner",
+    "minecraft:cow",
+    "minecraft:salmon",
+    "zombie_island:riot_gear_walker",
+    "minecraft:rabbit",
+    "minecraft:pillager",
+    "minecraft:zoglin",
+    "zombie_extreme:night_hunter",
+    "minecraft:bat",
+    "minecraft:piglin",
+    "zombie_island:caustic_x_walker",
+    "zombie_island:runner",
+    "minecraft:sniffer",
+    "zombie_extreme:fetus",
+    "minecraft:zombie_horse",
+    "minecraft:camel",
+    "zombie_extreme:zero_patient",
+    "zombie_extreme:military",
+    "minecraft:cat",
+    "minecraft:tropical_fish",
+    "jeg:ghoul",
+    "minecraft:ocelot",
+    "zombie_extreme:chainsaw",
+    "minecraft:wolf",
+    "minecraft:panda",
+    "minecraft:zombie_villager",
+    "zombie_extreme:crawler"
+]
